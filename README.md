@@ -15,7 +15,7 @@ Given the ordered sequence of books a user has interacted with, predict which bo
 
 1. Install packages: `pip install -r requirements.txt`
 2. Put `task_5_train.csv` (from the CSE 158 Assignment 1 data) in this folder. Data files are not committed.
-3. Run `assignment2.ipynb` top to bottom (about 12 minutes on a laptop).
+3. Run `assignment2.ipynb` top to bottom (about 20 minutes on a laptop).
 
 ## Notebook sections
 
@@ -34,10 +34,14 @@ Section 0 defines the train / validation / test split and the evaluation functio
 
 | Model | Pairwise accuracy | HR@10 | NDCG@10 |
 |---|---|---|---|
-| Popularity | 0.525 | 0.142 | 0.068 |
+| Popularity | 0.525 | 0.142 | 0.067 |
 | Markov transition | 0.577 | 0.274 | 0.197 |
-| BPR (64 factors) | 0.855 | 0.634 | 0.400 |
-| Combined (learning to rank) | 0.920 | 0.755 | 0.556 |
+| BPR (tuned: 128 factors, reg 0.01) | 0.858 | 0.641 | 0.410 |
+| Combined (learning to rank) | 0.921 | 0.757 | 0.560 |
+
+## Submission
+
+See `docs/FINAL_STEPS.md` for merging the video, exporting `workbook.html`, and the pre-submission check (`tools/check_submission.py`).
 
 ## Working together
 
