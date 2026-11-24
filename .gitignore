@@ -1,0 +1,5 @@
+# course data is not redistributed: download it from the Assignment 1 link and place it here
+*.csv
+__pycache__/
+.ipynb_checkpoints/
+*.html
